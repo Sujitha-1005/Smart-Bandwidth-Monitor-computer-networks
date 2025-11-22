@@ -1,0 +1,12 @@
+# Create .gitignore file
+cat > .gitignore << EOF
+*.class
+*.log
+*.tmp
+/target/
+/bin/
+/build/
+.DS_Store
+*.iml
+.idea/
+EOF
