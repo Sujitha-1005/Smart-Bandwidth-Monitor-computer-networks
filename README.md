@@ -1,8 +1,10 @@
-# Smart Bandwidth Monitor
+# 🚀 Smart Bandwidth Monitor
+A Java-based **client–server bandwidth monitoring system** providing real-time network speed tracking, latency measurement, traffic analysis, and dynamic visualization using **Java Swing**, **Multithreading**, and **Java Sockets**.
 
-A Java-based client-server application for real-time network bandwidth monitoring and visualization.
+---
 
-## Project Structure
+## 📁 Project Structure
+```
 Smart Bandwidth Monitor/
 ├── BandwidthMonitorClient.java
 ├── BandwidthMonitorServer.java
@@ -10,56 +12,113 @@ Smart Bandwidth Monitor/
 ├── NetworkInfo.java
 ├── NetworkMonitor.java
 └── README.md
+```
 
-text
+---
 
-## Features
+## ✨ Features
 
-- Real-time monitoring of network bandwidth
-- Client-server architecture for network data collection
-- Visualization of network usage through bandwidth graphs
-- Scalable to multiple clients connecting to the server
+### 🔍 Real-Time Monitoring
+- Live upload & download speed tracking  
+- Dual-axis dynamic graphs  
+- 60-second rolling window  
+- Cumulative data tracking  
+- Network interface selection  
 
-## Prerequisites
+### 🔗 Client–Server Architecture
+- Pure **Java Sockets** (TCP)  
+- Server streams bandwidth data  
+- Supports multiple concurrent clients  
 
-- Java JDK 8 or higher
-- Network connectivity for client-server communication
+### ⚡ Multithreaded Traffic Analysis
+- Latency measurement (<100ms)  
+- Packet loss detection  
+- Public IP & ISP data  
+- Concurrent data transfer metrics  
 
-## Compilation
+### 🎨 Java Swing Visualization
+- Responsive UI dashboard  
+- Auto-scaling charts  
+- Color-coded performance overlays  
 
-Compile all Java files using the following command:
+---
 
+## 🛠 Tech Stack
+- Java  
+- Java Swing  
+- Java Sockets  
+- Multithreading  
+- Java Networking API  
 
+---
+
+## 📦 Prerequisites
+- Java **JDK 8 or higher**  
+- Network connectivity between server & client machines  
+
+---
+
+## 🧪 Compilation
+Compile all Java files:
+
+```bash
 javac BandwidthMonitorServer.java NetworkData.java NetworkMonitor.java BandwidthMonitorClient.java NetworkInfo.java
-Running the Application
-Start the Server
+```
+
+---
+
+## 🚀 Running the Application
+
+### 1️⃣ Start Server
+```bash
 java BandwidthMonitorServer
-Start the Client
-bash
+```
+
+### 2️⃣ Start Client
+```bash
 java BandwidthMonitorClient
-Usage
-First, start the BandwidthMonitorServer on the machine you want to use as the server
+```
 
-Then run BandwidthMonitorClient on the same or different machines
+---
 
-The client will connect to the server and begin monitoring network bandwidth
+## 📌 Usage Guide
+- Start server on host machine  
+- Start client (same or different machine)  
+- Client auto-connects  
+- View:  
+  - Live bandwidth graphs  
+  - Upload/Download speeds  
+  - Latency & packet loss  
+  - Interface stats  
+  - Cumulative data  
 
-View real-time bandwidth graphs and statistics through the client interface
+---
 
-Architecture
-BandwidthMonitorServer: Main server class that handles client connections
+## 🏗 Architecture Overview
 
-BandwidthMonitorClient: Client application with GUI for bandwidth visualization
+### 📡 BandwidthMonitorServer
+Handles client connections & streams network data.
 
-NetworkMonitor: Core monitoring functionality for network data collection
+### 🖥 BandwidthMonitorClient
+Java Swing UI that visualizes all real-time data.
 
-NetworkData: Data structure for storing network statistics
+### ⚙ NetworkMonitor
+Measures speeds, latency, packet loss, etc.
 
-NetworkInfo: Utility class for network information retrieval
+### 📊 NetworkData
+Model for transmitting structured network statistics.
 
-Client-Server Communication
-The application uses a client-server model where:
+### 🧩 NetworkInfo
+Fetches IP address, ISP, and available interfaces.
 
-Server collects and processes network data
+---
+## 🤝 Contributing
 
-Clients connect to the server to receive real-time bandwidth information
+Contributions, enhancements, and suggestions are welcome.  
+Feel free to open a pull request or an issue.
+
+---
+
+## 📜 License
+
+This project is open-source under the **MIT License**.
